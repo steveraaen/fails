@@ -2,23 +2,35 @@
   "name": "fails",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "pwds.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "babel": "babel --presets es2015 js/main.js -o build/main.bundle.js",
+    "webpack": "webpack"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/steveraaen/fails.git"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/steveraaen/fails/issues"
   },
   "homepage": "https://github.com/steveraaen/fails#readme",
+  "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "webpack": "^2.6.1"
+  },
   "dependencies": {
+    "axios": "^0.16.1",
     "body-parser": "^1.17.2",
     "express": "^4.15.3",
-    "mongoose": "^4.10.3"
+    "mongoose": "^4.10.3",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4"
   }
 }
